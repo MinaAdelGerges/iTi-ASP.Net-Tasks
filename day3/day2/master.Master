@@ -1,0 +1,104 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="day2.master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<meta name="author" content="Wink Hosting (www.winkhosting.com)" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" href="images/style.css" type="text/css" />
+	<title>RedTie</title>
+    <style type="text/css">
+        .auto-style3 {
+            width: 297px;
+        }
+        .auto-style4 {
+            left: 0px;
+            top: 0px;
+            height: 97px;
+        }
+        .auto-style5 {
+            font-family: "Segoe UI";
+            font-size: 15px;
+            color: #000000;
+            background-color: #F0F0F0;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="page" align="center">
+		<div id="content" style="width:800px">
+			<div id="logo" class="auto-style3">
+				<div style="margin-top:70px" class="whitetitle">RedTie</div>
+			</div>
+			<div id="topheader" class="auto-style4">
+				<div align="left" class="bodytext">
+					<strong>Your Company Name</strong><br />
+					Evergreen Terrace 742<br />
+					Kansas Missouri<br />
+					Phone: 432-653-3121<br />
+					<a href="mailto:sales@thetiecompany.com">sales@thetiecompany.com</a>
+                    
+                    <span class="auto-style5">.<br />
+                    </span>
+                    <br />
+                 
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Font-Bold="True" Font-Names="Arial" Font-Size="15pt" ForeColor="Lime" Orientation="Horizontal" RenderingMode="Table" StaticDisplayLevels="2" Width="100%">
+                        <DynamicHoverStyle BackColor="#FF9900" />
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                 
+                    <br />
+                    
+                    <br />
+				</div>
+				<div id="toplinks" class="smallgraytext">
+					<a href="#">Home</a> | <a href="#">Sitemap</a> | <a href="#">Contact Us</a>
+				</div>
+			</div>
+			<div id="menu">
+				<div align="right" class="smallwhitetext" style="padding:9px;">
+					.</div>
+			</div>
+			<div id="submenu">
+				<div align="right" class="smallgraytext" style="padding:9px;">
+					<a href="#">Submenu 1</a> | <a href="#">Submenu 2</a> | <a href="#">Submenu 3</a> | <a href="#">Submenu 4</a> | <a href="#">Submenu 5</a> | <a href="#">Submenu 6</a>
+				</div>
+			</div>
+			<div id="contenttext">
+				<div style="padding:10px">
+					<span class="titletext">Welcome to RedTie!</span>
+					<br />
+					</div>
+					<div class="bodytext" style="padding:12px;" align="justify">
+					    <asp:ContentPlaceHolder ID="cp_main" runat="server">
+                        </asp:ContentPlaceHolder>
+				</div>
+			</div>
+			<div id="leftpanel">
+				<div align="justify" class="graypanel">
+					<span class="smalltitle">News</span><br /><br />
+					<span class="smallredtext">September 27, 2006</span><br />
+					<span class="bodytext">Curabitur arcu tellus, suscipit in, aliquam eget, ultricies id, sapien. Nam est.</span><br />
+					<a href="#" class="smallgraytext">More...</a><br /><br />
+					<span class="smallredtext">September 27, 2006</span><br />
+					<span class="bodytext">Curabitur arcu tellus, suscipit in, aliquam eget, ultricies id, sapien. Nam est.</span><br />
+					<a href="#" class="smallgraytext">More...</a><br /><br />
+					<span class="smallredtext">September 27, 2006</span><br />
+					<span class="bodytext">Curabitur arcu tellus, suscipit in, aliquam eget, ultricies id, sapien. Nam est.</span><br />
+					<a href="#" class="smallgraytext">More...</a><br /><br />
+				</div>
+			</div>
+			<div id="footer" class="smallgraytext">
+				<a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Products</a> | <a href="#">Our Services</a> | <a href="#">Contact Us</a>
+				| Your Company Name 
+				&copy; 2007 | <a href="http://www.winkhosting.com" target="_blank">Hosting Colombia</a> 
+			</div>
+		</div>
+	</div>
+    </div>
+    </form>
+</body>
+</html>
